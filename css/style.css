@@ -68,3 +68,10 @@ header > nav > button {
   font-size: 1.3rem;
   cursor: pointer;
 }
+#slide {
+  background: url(../images/slideimg/slide1.jpg);
+  width: 100%;
+  height: 700px;
+  margin: 0;
+  background-size: auto;
+}
