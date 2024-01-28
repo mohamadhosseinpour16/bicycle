@@ -6,3 +6,65 @@
   --bg-aside: rgb(181, 26, 52);
   --color-button: rgb(0, 6, 238);
 }
+* {
+  box-sizing: border-box;
+  font-family: iran;
+}
+body {
+  margin: 0;
+}
+@font-face {
+  font-family: iran;
+  src: url(../font/yekan.woff);
+}
+header {
+  width: 100%;
+  margin: 0;
+  background-color: var(--bg-hedaer);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--color-header);
+  padding: 1rem 2rem;
+}
+figure {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+}
+figure > img {
+  width: 30%;
+}
+figcaption {
+  font-size: 1.5rem;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 2rem;
+}
+nav > a {
+  text-decoration: none;
+  padding: 0 2rem;
+  font-size: 1.3rem;
+  transition: 0.5s;
+}
+nav > a:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+nav a,
+button {
+  color: var(--color-header);
+}
+nav > button {
+  outline: none;
+  border: 2px solid var(--color-header);
+  background-color: var(--bg-hedaer);
+  padding: 0.5rem 1.5rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
