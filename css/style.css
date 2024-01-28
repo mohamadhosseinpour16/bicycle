@@ -27,40 +27,40 @@ header {
   color: var(--color-header);
   padding: 1rem 2rem;
 }
-figure {
+header > figure {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   margin: 0;
   padding: 0;
 }
-figure > img {
+header > figure > img {
   width: 30%;
 }
-figcaption {
+header > figure > figcaption {
   font-size: 1.5rem;
 }
-nav {
+header > nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
   margin-left: 2rem;
 }
-nav > a {
+header > nav > a {
   text-decoration: none;
   padding: 0 2rem;
   font-size: 1.3rem;
   transition: 0.5s;
 }
-nav > a:hover {
+header > nav > a:hover {
   transform: scale(1.2);
   transition: 0.5s;
 }
-nav a,
+header > nav a,
 button {
   color: var(--color-header);
 }
-nav > button {
+header > nav > button {
   outline: none;
   border: 2px solid var(--color-header);
   background-color: var(--bg-hedaer);
