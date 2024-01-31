@@ -26,6 +26,9 @@ header {
   justify-content: space-between;
   color: var(--color-header);
   padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 header > figure {
   display: flex;
@@ -80,10 +83,12 @@ article {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2rem 0;
+  margin: 2rem;
 }
 .article-content-h1 > h1 {
   font-size: 2rem;
+  margin: 0;
+  padding-bottom: 18px;
 }
 .article-content-p {
   display: flex;
@@ -99,14 +104,14 @@ article {
   font-weight: 400;
   text-align: justify;
 }
-aside{
+aside {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--bg-aside);
   height: 200px;
 }
-aside>button{
+aside > button {
   background-color: inherit;
   border: 6px solid var(--white-color);
   color: var(--white-color);
@@ -114,4 +119,61 @@ aside>button{
   font-size: 2rem;
   cursor: pointer;
   font-weight: 900;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+main > div > h1 {
+  margin: 0;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 30%;
+}
+.column > img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.column > h2 {
+  margin: 0;
+  padding: 1rem 0;
+  font-size: 2rem;
+}
+.column > p {
+  text-align: justify;
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin: 0;
+}
+.column > button {
+  background-color: var(--bg-hedaer);
+  color: var(--white-color);
+  border: 1px solid var(--bg-hedaer);
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  font-size: 12px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.column > button:hover {
+  background-color: var(--white-color);
+  color: var(--bg-hedaer);
+  transform: scale(1.1);
+  transition: 0.5s;
 }
