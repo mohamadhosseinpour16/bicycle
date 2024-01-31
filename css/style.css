@@ -75,3 +75,27 @@ header > nav > button {
   margin: 0;
   background-size: auto;
 }
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+.article-content-h1 > h1 {
+  font-size: 2rem;
+}
+.article-content-p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 2rem;
+}
+.article-content-p > p {
+  width: 50%;
+  margin: 0 2rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-align: justify;
+}
