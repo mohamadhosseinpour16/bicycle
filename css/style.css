@@ -99,3 +99,19 @@ article {
   font-weight: 400;
   text-align: justify;
 }
+aside{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-aside);
+  height: 200px;
+}
+aside>button{
+  background-color: inherit;
+  border: 6px solid var(--white-color);
+  color: var(--white-color);
+  padding: 1rem 3rem;
+  font-size: 2rem;
+  cursor: pointer;
+  font-weight: 900;
+}
